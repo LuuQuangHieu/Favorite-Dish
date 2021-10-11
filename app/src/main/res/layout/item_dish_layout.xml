@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_2sdp"
+    android:background="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <!--The "tools" param is used to show the text only in the designing view
+ it will not be displayed once you run the app.-->
+
+        <ImageView
+            android:id="@+id/iv_dish_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_margin="@dimen/_1sdp"
+            android:contentDescription="@string/image_contentDescription"
+            android:scaleType="fitXY"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_dish_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_57sdp"
+            android:layout_weight="3"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_900"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            tools:text="Dish Title" />
+
+        <ImageButton
+            android:id="@+id/ib_more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="7"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_contentDescription"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <item-->
+<!--        android:id="@+id/action_search_dish"-->
+<!--        android:title="@string/search"-->
+<!--        android:icon="@drawable/ic_search"-->
+<!--        android:iconTint="@color/white"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+<!--        tools:targetApi = "o"/>-->
+
+    <item
+        android:id="@+id/action_filter_dishes"
+        android:icon="@drawable/ic_filter_list"
+        android:orderInCategory="101"
+        android:title="@string/action_filter_dishes"
+        app:showAsAction="always"/>
+
+<!--    <item android:id="@+id/action_add_dish"-->
+<!--        android:icon="@drawable/ic_add"-->
+<!--        android:orderInCategory="102"-->
+<!--        android:title="@string/action_add_dish"-->
+<!--        app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="103"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>
