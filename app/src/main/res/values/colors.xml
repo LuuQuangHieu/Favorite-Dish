@@ -44,5 +44,9 @@
     <color name="grey_500">#9E9E9E</color>
 
     <color name="divider_line_color">#e0e0e0</color>
+
+    <color name="blue_light">#667eea</color>
+
+
 >
 </resources>
