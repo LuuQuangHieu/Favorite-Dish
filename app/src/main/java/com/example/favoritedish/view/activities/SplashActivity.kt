@@ -42,7 +42,7 @@ class SplashActivity : AppCompatActivity() {    //extend to use inflate
             }
 
             override fun onAnimationEnd(animation: Animation?) {
-                //when animation complete, navigate it to the MainActivity with delay 200 mili second
+                //when animation complete, navigate it to the MainActivity with delay 100 milisecond
                 Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this@SplashActivity, MainActivity::class.java))
                     finish()

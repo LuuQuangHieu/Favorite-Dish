@@ -15,6 +15,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface FavDishDao {
 
+
     /**
      * All queries must be executed on a separate thread. They cannot be executed from Main Thread
        or it will cause an crash.
