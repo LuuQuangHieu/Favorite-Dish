@@ -46,6 +46,16 @@ class AllDishesFragment : Fragment() {
         setHasOptionsMenu(true)
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.e("onPause", "Pause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("onPause", "Stop")
+    }
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.main, menu)
         super.onCreateOptionsMenu(menu, inflater)
